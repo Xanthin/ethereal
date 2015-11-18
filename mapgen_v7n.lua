@@ -11,6 +11,7 @@ dofile(path.."banana_tree.lua")
 dofile(path.."bamboo_tree.lua")
 dofile(path.."birch_tree.lua")
 dofile(path.."bush.lua")
+dofile(path.."waterlily.lua")
 
 --= Biomes (Minetest 0.4.13 and above)
 
@@ -1049,7 +1050,7 @@ if minetest.registered_nodes["flowers:waterlily"] then
 		},
 		y_min = 0,
 		y_max = 0,
-		schematic = minetest.get_modpath("flowers").."/schematics/waterlily.mts",
+		schematic = path.."waterlily.mts",
 		rotation = "random",
 	})
 end
