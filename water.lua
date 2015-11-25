@@ -91,9 +91,9 @@ minetest.register_abm({
 		or node.name == "default:snowblock"
 		or node.name == "ethereal:icebrick"
 		or node.name == "ethereal:snowbrick" then
-			minetest.set_node(pos, {name = "default:water_source"})
+			minetest.set_node(pos, {name = "default:river_water_source"})
 		elseif node.name == "default:snow" then
-			minetest.set_node(pos, {name = "default:water_flowing"})
+			minetest.set_node(pos, {name = "default:river_water_flowing"})
 		elseif node.name == "default:dirt_with_snow" then
 			minetest.set_node(pos, {name = "default:dirt_with_grass"})
 		end
