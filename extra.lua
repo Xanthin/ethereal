@@ -1,7 +1,9 @@
 
+local S = ethereal.intllib
+
 -- Bamboo Flooring
 minetest.register_node("ethereal:bamboo_floor", {
-	description = ("Bamboo Floor"),
+	description = S("Bamboo Floor"),
 	drawtype = 'nodebox',
 	tiles = { "bamboo_floor.png" },
 	wield_image = "bamboo_floor.png",
@@ -73,7 +75,7 @@ minetest.register_craft({
 
 -- Palm Wax
 minetest.register_craftitem("ethereal:palm_wax", {
-	description = "Palm Wax",
+	description = S("Palm Wax"),
 	inventory_image = "palm_wax.png",
 	wield_image = "palm_wax.png",
 })
@@ -87,7 +89,7 @@ minetest.register_craft({
 
 -- Candle from Wax and String/Cotton
 minetest.register_node("ethereal:candle", {
-	description = "Candle",
+	description = S("Candle"),
 	drawtype = "plantlike",
 	inventory_image = "candle_static.png",
 	wield_image = "candle_static.png",
@@ -125,7 +127,7 @@ minetest.register_craft({
 
 -- Wooden Bowl
 minetest.register_craftitem("ethereal:bowl", {
-	description = "Bowl",
+	description = S("Bowl"),
 	inventory_image = "bowl.png",
 })
 
@@ -139,7 +141,7 @@ minetest.register_craft({
 
 -- stone Ladder
 minetest.register_node("ethereal:stone_ladder", {
-	description = "Stone Ladder",
+	description = S("Stone Ladder"),
 	drawtype = "signlike",
 	tiles = {"stone_ladder.png"},
 	inventory_image = "stone_ladder.png",
@@ -170,7 +172,7 @@ minetest.register_craft({
 -- Paper Wall
 minetest.register_node("ethereal:paper_wall", {
 	drawtype = "nodebox",
-	description = ("Paper Wall"),
+	description = S("Paper Wall"),
 	tiles = {"paper_wall.png"},
 	inventory_image_image = "paper_wall.png",
 	wield_image = "paper_wall.png",
@@ -204,7 +206,7 @@ minetest.register_craft({
 
 -- Glostone (A little bit of light decoration)
 minetest.register_node("ethereal:glostone", {
-	description = "Glo Stone",
+	description = S("Glo Stone"),
 	tiles = {"glostone.png"},
 	groups = {cracky = 3},
 	light_source = 13,
@@ -221,7 +223,7 @@ minetest.register_craft({
 
 -- Charcoal Lump
 minetest.register_craftitem("ethereal:charcoal_lump", {
-	description = "Lump of Charcoal",
+	description = S("Lump of Charcoal"),
 	inventory_image = "charcoal_lump.png",
 	wield_image = "charcoal_lump.png",
 })
@@ -257,7 +259,7 @@ minetest.register_craft({
 
 -- Staff of Light (by Xanthin)
 minetest.register_tool("ethereal:light_staff", {
-	description = "Staff of Light",
+	description = S("Staff of Light"),
 	inventory_image = "light_staff.png",
 	wield_image = "light_staff.png",
 	stack_max = 1,

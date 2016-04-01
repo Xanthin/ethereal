@@ -1,64 +1,66 @@
 
+local S = ethereal.intllib
+
 -- register Ethereal wood type gates
 
 doors.register_fencegate("ethereal:fencegate_scorched", {
-	description = "Scorched Wood Fence Gate",
+	description = S("Scorched Wood Fence Gate"),
 	texture = "scorched_tree.png",
 	material = "ethereal:scorched_tree",
 	groups = {choppy = 2, oddly_breakable_by_hand = 2, flammable = 2}
 })
 
 doors.register_fencegate("ethereal:fencegate_frostwood", {
-	description = "Frost Wood Fence Gate",
+	description = S("Frost Wood Fence Gate"),
 	texture = "frost_wood.png",
 	material = "ethereal:frost_wood",
 	groups = {choppy = 2, oddly_breakable_by_hand = 2, flammable = 2}
 })
 
 doors.register_fencegate("ethereal:fencegate_redwood", {
-	description = "Redwood Fence Gate",
+	description = S("Redwood Fence Gate"),
 	texture = "redwood_wood.png",
 	material = "ethereal:redwood_wood",
 	groups = {choppy = 2, oddly_breakable_by_hand = 2, flammable = 2}
 })
 
 doors.register_fencegate("ethereal:fencegate_willow", {
-	description = "Willow Wood Fence Gate",
+	description = S("Willow Wood Fence Gate"),
 	texture = "willow_wood.png",
 	material = "ethereal:willow_wood",
 	groups = {choppy = 2, oddly_breakable_by_hand = 2, flammable = 2}
 })
 
 doors.register_fencegate("ethereal:fencegate_yellowwood", {
-	description = "Healing Wood Fence Gate",
+	description = S("Healing Wood Fence Gate"),
 	texture = "yellow_wood.png",
 	material = "ethereal:yellow_wood",
 	groups = {choppy = 2, oddly_breakable_by_hand = 2, flammable = 2}
 })
 
 doors.register_fencegate("ethereal:fencegate_palm", {
-	description = "Palm Wood Fence Gate",
+	description = S("Palm Wood Fence Gate"),
 	texture = "moretrees_palm_wood.png",
 	material = "ethereal:palm_wood",
 	groups = {choppy = 2, oddly_breakable_by_hand = 2, flammable = 2}
 })
 
 doors.register_fencegate("ethereal:fencegate_banana", {
-	description = "Banana Wood Fence Gate",
+	description = S("Banana Wood Fence Gate"),
 	texture = "banana_wood.png",
 	material = "ethereal:banana_wood",
 	groups = {choppy = 2, oddly_breakable_by_hand = 2, flammable = 2}
 })
 
 doors.register_fencegate("ethereal:fencegate_mushroom", {
-	description = "Mushroom Trunk Fence Gate",
+	description = S("Mushroom Trunk Fence Gate"),
 	texture = "mushroom_trunk.png",
 	material = "ethereal:mushroom_trunk",
 	groups = {choppy = 2, oddly_breakable_by_hand = 2, flammable = 2}
 })
 
 doors.register_fencegate("ethereal:fencegate_birch", {
-	description = "Birch Wood Fence Gate",
+	description = S("Birch Wood Fence Gate"),
 	texture = "moretrees_birch_wood.png",
 	material = "ethereal:birch_wood",
 	groups = {choppy = 2, oddly_breakable_by_hand = 2, flammable = 2}

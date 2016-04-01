@@ -1,6 +1,9 @@
+
+local S = ethereal.intllib
+
 -- Crystal Spike (Hurts if you touch it - thanks to ZonerDarkRevention for his DokuCraft DeviantArt crystal texture)
 minetest.register_node("ethereal:crystal_spike", {
-	description = "Crystal Spike",
+	description = S("Crystal Spike"),
 	drawtype = "plantlike",
 	tiles = { "crystal_spike.png" },
 	inventory_image = "crystal_spike.png",
@@ -20,7 +23,7 @@ minetest.register_node("ethereal:crystal_spike", {
 
 -- Crystal Ingot
 minetest.register_craftitem("ethereal:crystal_ingot", {
-	description = "Crystal Ingot",
+	description = S("Crystal Ingot"),
 	inventory_image = "crystal_ingot.png",
 	wield_image = "crystal_ingot.png",
 })
@@ -35,7 +38,7 @@ minetest.register_craft({
 
 -- Crystal Block
 minetest.register_node("ethereal:crystal_block", {
-	description = "Crystal Block",
+	description = S("Crystal Block"),
 	tiles = {"crystal_block.png"},
 	light_source = 9,
 	is_ground_content = false,
@@ -61,7 +64,7 @@ minetest.register_craft({
 
 -- Crystal Sword (Powerful wee beastie)
 minetest.register_tool("ethereal:sword_crystal", {
-	description = "Crystal Sword",
+	description = S("Crystal Sword"),
 	inventory_image = "crystal_sword.png",
 	wield_image = "crystal_sword.png",
 	tool_capabilities = {
@@ -89,7 +92,7 @@ minetest.register_craft({
 
 -- Crystal Axe
 minetest.register_tool("ethereal:axe_crystal", {
-	description = "Crystal Axe",
+	description = S("Crystal Axe"),
 	inventory_image = "crystal_axe.png",
 	wield_image = "crystal_axe.png",
 	tool_capabilities = {
@@ -117,7 +120,7 @@ minetest.register_craft({
 
 -- Crystal Pick (This will last a while)
 minetest.register_tool("ethereal:pick_crystal", {
-	description = "Crystal Pickaxe",
+	description = S("Crystal Pickaxe"),
 	inventory_image = "crystal_pick.png",
 	wield_image = "crystal_pick.png",
 	tool_capabilities = {
@@ -145,7 +148,7 @@ minetest.register_craft({
 
 -- Crystal Shovel (with Soft Touch so player can dig up dirt with grass intact)
 minetest.register_tool("ethereal:shovel_crystal", {
-	description = "Crystal (soft touch) Shovel",
+	description = S("Crystal (soft touch) Shovel"),
 	inventory_image = "crystal_shovel.png",
 	wield_image = "crystal_shovel.png^[transformR90",
 
@@ -193,7 +196,7 @@ minetest.register_craft({
 
 -- Crystal Gilly Staff (replenishes air supply when used)
 minetest.register_tool("ethereal:crystal_gilly_staff", {
-	description = "Crystal Gilly Staff",
+	description = S("Crystal Gilly Staff"),
 	inventory_image = "crystal_gilly_staff.png",
 	wield_image = "crystal_gilly_staff.png",
 

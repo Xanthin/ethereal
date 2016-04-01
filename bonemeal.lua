@@ -1,7 +1,9 @@
 
+local S = ethereal.intllib
+
 -- bone item
 minetest.register_craftitem("ethereal:bone", {
-	description = "Bone",
+	description = S("Bone"),
 	inventory_image = "bone.png",
 })
 
@@ -220,7 +222,7 @@ end
 
 -- bonemeal item
 minetest.register_craftitem("ethereal:bonemeal", {
-	description = "Bone Meal",
+	description = S("Bone Meal"),
 	inventory_image = "bonemeal.png",
 
 	on_use = function(itemstack, user, pointed_thing)

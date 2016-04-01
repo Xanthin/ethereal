@@ -38,6 +38,15 @@ ethereal.savannah  = 1 -- Dry yellow grass with acacia tree's
 ethereal.fiery     = 1 -- Red grass with lava craters
 ethereal.sandclay  = 1 -- Sand areas with clay underneath
 
+-- Intllib
+local S
+if minetest.get_modpath("intllib") then
+	S = intllib.Getter()
+else
+	S = function(s) return s end
+end
+ethereal.intllib = S
+
 local path = minetest.get_modpath("ethereal")
 
 dofile(path .. "/plantlife.lua")
@@ -67,4 +76,4 @@ if minetest.get_modpath("xanadu") then
 	dofile(path .. "/plantpack.lua")
 end
 
-print ("[MOD] Ethereal loaded")
+print (S("[MOD] Ethereal loaded"))

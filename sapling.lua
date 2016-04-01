@@ -1,7 +1,9 @@
 
+local S = ethereal.intllib
+
 -- Bamboo Sprout
 minetest.register_node("ethereal:bamboo_sprout", {
-	description = "Bamboo Sprout",
+	description = S("Bamboo Sprout"),
 	drawtype = "plantlike",
 	tiles = {"bamboo_sprout.png"},
 	inventory_image = "bamboo_sprout.png",
@@ -25,7 +27,7 @@ minetest.register_node("ethereal:bamboo_sprout", {
 ethereal.register_sapling = function(name, desc, texture)
 
 	minetest.register_node(name .. "_sapling", {
-		description = desc .. " Tree Sapling",
+		description = S(desc .. " Tree Sapling"),
 		drawtype = "plantlike",
 		visual_scale = 1.0,
 		tiles = {texture .. ".png"},
@@ -61,7 +63,7 @@ ethereal.register_sapling("ethereal:birch", "Birch", "moretrees_birch_sapling")
 ethereal.add_tree = function (pos, ofx, ofy, ofz, schem)
 	-- check for schematic
 	if not schem then
-		print ("Schematic not found")
+		print (S("Schematic not found"))
 		return
 	end
 	-- remove sapling and place schematic

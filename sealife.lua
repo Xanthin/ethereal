@@ -1,7 +1,9 @@
 
+local S = ethereal.intllib
+
 -- Seaweed
 minetest.register_node("ethereal:seaweed", {
-	description = "Seaweed",
+	description = S("Seaweed"),
 	drawtype = "plantlike",
 	tiles = {"seaweed.png"},
 	inventory_image = "seaweed.png",
@@ -31,7 +33,7 @@ minetest.register_craft( {
 
 -- Blue Coral
 minetest.register_node("ethereal:coral2", {
-	description = "Blue Coral",
+	description = S("Blue Coral"),
 	drawtype = "plantlike",
 	tiles = {"coral2.png"},
 	inventory_image = "coral2.png",
@@ -54,7 +56,7 @@ minetest.register_craft( {
 
 -- Orange Coral
 minetest.register_node("ethereal:coral3", {
-	description = "Orange Coral",
+	description = S("Orange Coral"),
 	drawtype = "plantlike",
 	tiles = {"coral3.png"},
 	inventory_image = "coral3.png",
@@ -77,7 +79,7 @@ minetest.register_craft( {
 
 -- Pink Coral
 minetest.register_node("ethereal:coral4", {
-	description = "Pink Coral",
+	description = S("Pink Coral"),
 	drawtype = "plantlike",
 	tiles = {"coral4.png"},
 	inventory_image = "coral4.png",
@@ -100,7 +102,7 @@ minetest.register_craft( {
 
 -- Green Coral
 minetest.register_node("ethereal:coral5", {
-	description = "Green Coral",
+	description = S("Green Coral"),
 	drawtype = "plantlike",
 	tiles = {"coral5.png"},
 	inventory_image = "coral5.png",
@@ -123,7 +125,7 @@ minetest.register_craft( {
 
 -- Undersea Sand
 minetest.register_node("ethereal:sandy", {
-	description = "Sandy",
+	description = S("Sandy"),
 	tiles = {"default_sand.png"},
 	is_ground_content = true,
 	groups = {

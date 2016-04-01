@@ -1,7 +1,9 @@
 
+local S = ethereal.intllib
+
 -- Strawberry (can also be planted as seed)
 minetest.register_craftitem("ethereal:strawberry", {
-	description = "Strawberry",
+	description = S("Strawberry"),
 	inventory_image = "strawberry.png",
 	wield_image = "strawberry.png",
 	on_place = function(itemstack, placer, pointed_thing)

@@ -1,7 +1,9 @@
 
+local S = ethereal.intllib
+
 -- Fire Flower
 minetest.register_node("ethereal:fire_flower", {
-	description = "Fire Flower",
+	description = S("Fire Flower"),
 	drawtype = "plantlike",
 	tiles = { "ethereal_fire_flower.png" },
 	inventory_image = "ethereal_fire_flower.png",
@@ -36,7 +38,7 @@ minetest.register_craft({
 
 -- Fire Dust
 minetest.register_craftitem("ethereal:fire_dust", {
-	description = "Fire Dust",
+	description = S("Fire Dust"),
 	inventory_image = "fire_dust.png",
 })
 
@@ -55,7 +57,7 @@ minetest.register_craft({
 
 -- vines
 minetest.register_node("ethereal:vine", {
-	description = "Vine",
+	description = S("Vine"),
 	drawtype = "signlike",
 	tiles = {"vine.png"},
 	inventory_image = "vine.png",
@@ -84,7 +86,7 @@ minetest.register_craft({
 
 -- light strings (glowing vine)
 minetest.register_node("ethereal:lightstring", {
-	description = "Light String Vine",
+	description = S("Light String Vine"),
 	drawtype = "signlike",
 	tiles = {"lightstring.png"},
 	inventory_image = "lightstring.png",
@@ -114,7 +116,7 @@ minetest.register_craft({
 
 -- Fern (boston)
 minetest.register_node("ethereal:fern", {
-	description = "Fern",
+	description = S("Fern"),
 	drawtype = "plantlike",
 	visual_scale = 1.2,
 	tiles = {"fern.png"},
@@ -142,14 +144,14 @@ minetest.register_node("ethereal:fern", {
 
 -- Boston Ferns sometimes drop edible Tubers (heals 1/2 heart when eaten)
 minetest.register_craftitem("ethereal:fern_tubers", {
-	description = "Fern Tubers",
+	description = S("Fern Tubers"),
 	inventory_image = "fern_tubers.png",
 	on_use = minetest.item_eat(1),
 })
 
 -- Red Shrub (not flammable)
 minetest.register_node("ethereal:dry_shrub", {
-	description = "Fiery Dry Shrub",
+	description = S("Fiery Dry Shrub"),
 	drawtype = "plantlike",
 	visual_scale = 1.0,
 	tiles = {"ethereal_dry_shrub.png"},
@@ -170,7 +172,7 @@ minetest.register_node("ethereal:dry_shrub", {
 
 -- Grey Shrub (not Flammable - too cold to burn)
 minetest.register_node("ethereal:snowygrass", {
-	description = "Snowy Grass",
+	description = S("Snowy Grass"),
 	drawtype = "plantlike",
 	visual_scale = 0.9,
 	tiles = {"ethereal_snowygrass.png"},
@@ -191,7 +193,7 @@ minetest.register_node("ethereal:snowygrass", {
 
 -- Crystal Shrub (not Flammable - too cold to burn)
 minetest.register_node("ethereal:crystalgrass", {
-	description = "Crystal Grass",
+	description = S("Crystal Grass"),
 	drawtype = "plantlike",
 	visual_scale = 0.9,
 	tiles = {"ethereal_crystalgrass.png"},
@@ -214,7 +216,7 @@ minetest.register_node("ethereal:crystalgrass", {
 function ethereal.add_moss(typ, descr, texture, receipe_item)
 
 	minetest.register_node("ethereal:" .. typ .. "_moss", {
-		description = descr .. " Moss",
+		description = S(descr .. " Moss"),
 		tiles = {texture},
 		groups = {crumbly = 3},
 		sounds = default.node_sound_dirt_defaults()
@@ -234,7 +236,7 @@ ethereal.add_moss( "green", "Green", "default_grass.png", "default:jungleleaves"
 
 -- Illuminated Cave Shrooms (Red, Green and Blue)
 minetest.register_node("ethereal:illumishroom", {
-	description = "Red Illumishroom",
+	description = S("Red Illumishroom"),
 	drawtype = "plantlike",
 	tiles = { "illumishroom.png" },
 	inventory_image = "illumishroom.png",
@@ -252,7 +254,7 @@ minetest.register_node("ethereal:illumishroom", {
 })
 
 minetest.register_node("ethereal:illumishroom2", {
-	description = "Green Illumishroom",
+	description = S("Green Illumishroom"),
 	drawtype = "plantlike",
 	tiles = { "illumishroom2.png" },
 	inventory_image = "illumishroom2.png",
@@ -270,7 +272,7 @@ minetest.register_node("ethereal:illumishroom2", {
 })
 
 minetest.register_node("ethereal:illumishroom3", {
-	description = "Cyan Illumishroom",
+	description = S("Cyan Illumishroom"),
 	drawtype = "plantlike",
 	tiles = { "illumishroom3.png" },
 	inventory_image = "illumishroom3.png",

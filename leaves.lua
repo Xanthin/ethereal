@@ -1,4 +1,6 @@
 
+local S = ethereal.intllib
+
 -- set leaftype (value inside init.lua)
 local leaftype = "plantlike"
 
@@ -62,7 +64,7 @@ minetest.override_item("default:aspen_leaves", {
 
 -- willow twig
 minetest.register_node("ethereal:willow_twig", {
-	description = "Willow Twig",
+	description = S("Willow Twig"),
 	drawtype = "plantlike",
 	tiles = {"willow_twig.png"},
 	inventory_image = "willow_twig.png",
@@ -85,7 +87,7 @@ minetest.register_node("ethereal:willow_twig", {
 
 -- redwood leaves
 minetest.register_node("ethereal:redwood_leaves", {
-	description = "Redwood Leaves",
+	description = S("Redwood Leaves"),
 	drawtype = leaftype,
 	visual_scale = 1.2,
 	tiles = {"redwood_leaves.png"},
@@ -108,7 +110,7 @@ minetest.register_node("ethereal:redwood_leaves", {
 
 -- orange tree leaves
 minetest.register_node("ethereal:orange_leaves", {
-	description = "Orange Leaves",
+	description = S("Orange Leaves"),
 	drawtype = leaftype,
 	visual_scale = 1.2,
 	tiles = {"orange_leaves.png"},
@@ -131,7 +133,7 @@ minetest.register_node("ethereal:orange_leaves", {
 
 -- banana tree leaves
 minetest.register_node("ethereal:bananaleaves", {
-	description = "Banana Leaves",
+	description = S("Banana Leaves"),
 	drawtype = leaftype,
 	visual_scale = 1.2,
 	tiles = {"banana_leaf.png"},
@@ -154,7 +156,7 @@ minetest.register_node("ethereal:bananaleaves", {
 
 -- healing tree leaves
 minetest.register_node("ethereal:yellowleaves", {
-	description = "Healing Tree Leaves",
+	description = S("Healing Tree Leaves"),
 	drawtype = leaftype,
 	visual_scale = 1.2,
 	tiles = {"yellow_leaves.png"},
@@ -180,7 +182,7 @@ minetest.register_node("ethereal:yellowleaves", {
 
 -- palm tree leaves
 minetest.register_node("ethereal:palmleaves", {
-	description = "Palm Leaves",
+	description = S("Palm Leaves"),
 	drawtype = leaftype,
 	visual_scale = 1.2,
 	tiles = {"moretrees_palm_leaves.png"},
@@ -203,7 +205,7 @@ minetest.register_node("ethereal:palmleaves", {
 
 -- birch tree leaves
 minetest.register_node("ethereal:birch_leaves", {
-	description = "Birch Leaves",
+	description = S("Birch Leaves"),
 	drawtype = leaftype,
 	visual_scale = 1.2,
 	tiles = {"moretrees_birch_leaves.png"},
@@ -226,7 +228,7 @@ minetest.register_node("ethereal:birch_leaves", {
 
 -- frost tree leaves
 minetest.register_node("ethereal:frost_leaves", {
-	description = "Frost Leaves",
+	description = S("Frost Leaves"),
 	drawtype = leaftype,
 	visual_scale = 1.2,
 	tiles = {"ethereal_frost_leaves.png"},
@@ -250,7 +252,7 @@ minetest.register_node("ethereal:frost_leaves", {
 
 -- bamboo stalk leaves
 minetest.register_node("ethereal:bamboo_leaves", {
-	description = "Bamboo Leaves",
+	description = S("Bamboo Leaves"),
 	drawtype = leaftype,
 	visual_scale = 1.2,
 	tiles = {"bamboo_leaves.png"},
@@ -273,7 +275,7 @@ minetest.register_node("ethereal:bamboo_leaves", {
 
 -- mushroom tops
 minetest.register_node("ethereal:mushroom", {
-	description = "Mushroom Cap",
+	description = S("Mushroom Cap"),
 	tiles = {"mushroom_block.png"},
 	groups = {choppy = 2, oddly_breakable_by_hand = 1, flammable = 2},
 	drop = {
@@ -294,7 +296,7 @@ minetest.register_craft({
 
 -- mushroom pore (spongelike material found inside giant shrooms)
 minetest.register_node("ethereal:mushroom_pore", {
-	description = "Mushroom Pore",
+	description = S("Mushroom Pore"),
 	tiles = {"mushroom_pore.png"},
 	groups = {
 		snappy = 3, cracky = 3, choppy = 3, oddly_breakable_by_hand = 3,
@@ -305,7 +307,7 @@ minetest.register_node("ethereal:mushroom_pore", {
 
 -- hedge block
 minetest.register_node("ethereal:bush", {
-	description = "Bush",
+	description = S("Bush"),
 	tiles = {"ethereal_bush.png"},
 	walkable = true,
 	groups = {snappy = 3, flammable = 2},
@@ -324,7 +326,7 @@ minetest.register_craft({
 -- bush block #2
 minetest.register_node("ethereal:bush2", {
 	drawtype = "allfaces_optional",
-	description = "Bush #2",
+	description = S("Bush #2"),
 	tiles = {"default_aspen_leaves.png"},
 	paramtype = "light",
 	walkable = true,
@@ -344,7 +346,7 @@ minetest.register_craft({
 -- bush block #3
 minetest.register_node("ethereal:bush3", {
 	drawtype = "allfaces_optional",
-	description = "Bush #3",
+	description = S("Bush #3"),
 	tiles = {"default_pine_needles.png"},
 	paramtype = "light",
 	walkable = true,

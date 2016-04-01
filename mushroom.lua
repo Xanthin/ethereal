@@ -1,7 +1,9 @@
 
+local S = ethereal.intllib
+
 -- mushroom soup (Heals 1 heart)
 minetest.register_craftitem("ethereal:mushroom_soup", {
-	description = "Mushroom Soup",
+	description = S("Mushroom Soup"),
 	inventory_image = "mushroom_soup.png",
 	on_use = minetest.item_eat(5, "ethereal:bowl"),
 })

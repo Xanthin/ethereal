@@ -1,4 +1,6 @@
 
+local S = ethereal.intllib
+
 -- fix apples hanging in sky when no tree around
 minetest.override_item("default:apple", {
 	drop = "default:apple",
@@ -6,7 +8,7 @@ minetest.override_item("default:apple", {
 
 -- Banana (Heals one heart when eaten)
 minetest.register_node("ethereal:banana", {
-	description = "Banana",
+	description = S("Banana"),
 	drawtype = "torchlike",
 	visual_scale = 1.0,
 	tiles = {"banana_single.png"},
@@ -35,7 +37,7 @@ minetest.register_node("ethereal:banana", {
 
 -- Banana Dough
 minetest.register_craftitem("ethereal:banana_dough", {
-	description = "Banana Dough",
+	description = S("Banana Dough"),
 	inventory_image = "banana_dough.png",
 })
 
@@ -54,7 +56,7 @@ minetest.register_craft({
 
 -- Orange (Heals 2 hearts when eaten)
 minetest.register_node("ethereal:orange", {
-	description = "Orange",
+	description = S("Orange"),
 	drawtype = "plantlike",
 	visual_scale = 1.0,
 	tiles = {"farming_orange.png"},
@@ -83,7 +85,7 @@ minetest.register_node("ethereal:orange", {
 
 -- Pine Nuts (Heals 1/2 heart when eaten)
 minetest.register_craftitem("ethereal:pine_nuts", {
-	description = "Pine Nuts",
+	description = S("Pine Nuts"),
 	inventory_image = "pine_nuts.png",
 	wield_image = "pine_nuts.png",
 	on_use = minetest.item_eat(1),
@@ -91,7 +93,7 @@ minetest.register_craftitem("ethereal:pine_nuts", {
 
 -- Banana Loaf (Heals 3 hearts when eaten)
 minetest.register_craftitem("ethereal:banana_bread", {
-	description = "Banana Loaf",
+	description = S("Banana Loaf"),
 	inventory_image = "banana_bread.png",
 	wield_image = "banana_bread.png",
 	on_use = minetest.item_eat(6),
@@ -99,7 +101,7 @@ minetest.register_craftitem("ethereal:banana_bread", {
 
 -- Coconut (Gives 4 coconut slices, each heal 1/2 heart)
 minetest.register_node("ethereal:coconut", {
-	description = "Coconut",
+	description = S("Coconut"),
 	drawtype = "plantlike",
 	walkable = false,
 	paramtype = "light",
@@ -121,7 +123,7 @@ minetest.register_node("ethereal:coconut", {
 
 -- Coconut Slice (Heals half heart when eaten)
 minetest.register_craftitem("ethereal:coconut_slice", {
-	description = "Coconut Slice",
+	description = S("Coconut Slice"),
 	inventory_image = "moretrees_coconut_slice.png",
 	wield_image = "moretrees_coconut_slice.png",
 	on_use = minetest.item_eat(1),
@@ -129,7 +131,7 @@ minetest.register_craftitem("ethereal:coconut_slice", {
 
 -- Golden Apple (Found on Healing Tree, heals all 10 hearts)
 minetest.register_node("ethereal:golden_apple", {
-	description = "Golden Apple",
+	description = S("Golden Apple"),
 	drawtype = "plantlike",
 	visual_scale = 1.0,
 	tiles = {"default_apple_gold.png"},
@@ -158,7 +160,7 @@ minetest.register_node("ethereal:golden_apple", {
 
 -- Hearty Stew (Heals 5 hearts - thanks to ZonerDarkRevention for his DokuCraft DeviantArt bowl texture)
 minetest.register_craftitem("ethereal:hearty_stew", {
-	description = "Hearty Stew",
+	description = S("Hearty Stew"),
 	inventory_image = "hearty_stew.png",
 	wield_image = "hearty_stew.png",
 	on_use = minetest.item_eat(10, "ethereal:bowl"),
@@ -187,7 +189,7 @@ end
 
 -- Bucket of Cactus Pulp
 minetest.register_craftitem("ethereal:bucket_cactus", {
-	description = "Bucket of Cactus Pulp",
+	description = S("Bucket of Cactus Pulp"),
 	inventory_image = "bucket_cactus.png",
 	wield_image = "bucket_cactus.png",
 	stack_max = 1,

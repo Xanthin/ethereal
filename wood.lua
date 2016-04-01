@@ -1,7 +1,9 @@
 
+local S = ethereal.intllib
+
 -- willow trunk
 minetest.register_node("ethereal:willow_trunk", {
-	description = "Willow Trunk",
+	description = S("Willow Trunk"),
 	tiles = {
 		"willow_trunk_top.png",
 		"willow_trunk_top.png",
@@ -15,7 +17,7 @@ minetest.register_node("ethereal:willow_trunk", {
 
 -- willow wood
 minetest.register_node("ethereal:willow_wood", {
-	description = "Willow Wood",
+	description = S("Willow Wood"),
 	tiles = {"willow_wood.png"},
 	is_ground_content = false,
 	groups = {wood = 1, choppy = 2, oddly_breakable_by_hand = 1, flammable = 3},
@@ -29,7 +31,7 @@ minetest.register_craft({
 
 -- redwood trunk
 minetest.register_node("ethereal:redwood_trunk", {
-	description = "Redwood Trunk",
+	description = S("Redwood Trunk"),
 	tiles = {
 		"redwood_trunk_top.png",
 		"redwood_trunk_top.png",
@@ -43,7 +45,7 @@ minetest.register_node("ethereal:redwood_trunk", {
 
 -- redwood wood
 minetest.register_node("ethereal:redwood_wood", {
-	description = "Redwood Wood",
+	description = S("Redwood Wood"),
 	tiles = {"redwood_wood.png"},
 	is_ground_content = false,
 	groups = {wood = 1, choppy = 2, oddly_breakable_by_hand = 1, flammable = 3},
@@ -57,7 +59,7 @@ minetest.register_craft({
 
 -- frost trunk
 minetest.register_node("ethereal:frost_tree", {
-	description = "Frost Tree",
+	description = S("Frost Tree"),
 	tiles = {
 		"ethereal_frost_tree_top.png",
 		"ethereal_frost_tree_top.png",
@@ -71,7 +73,7 @@ minetest.register_node("ethereal:frost_tree", {
 
 -- frost wood
 minetest.register_node("ethereal:frost_wood", {
-	description = "Frost Wood",
+	description = S("Frost Wood"),
 	tiles = {"frost_wood.png"},
 	is_ground_content = false,
 	groups = {wood = 1, choppy = 2, oddly_breakable_by_hand = 1, put_out_fire = 1},
@@ -85,7 +87,7 @@ minetest.register_craft({
 
 -- healing trunk
 minetest.register_node("ethereal:yellow_trunk", {
-	description = "Healing Tree Trunk",
+	description = S("Healing Tree Trunk"),
 	tiles = {
 		"yellow_tree_top.png",
 		"yellow_tree_top.png",
@@ -99,7 +101,7 @@ minetest.register_node("ethereal:yellow_trunk", {
 
 -- healing wood
 minetest.register_node("ethereal:yellow_wood", {
-	description = "Healing Tree Wood",
+	description = S("Healing Tree Wood"),
 	tiles = {"yellow_wood.png"},
 	is_ground_content = false,
 	groups = {wood = 1, choppy = 2, oddly_breakable_by_hand = 1, put_out_fire = 1},
@@ -113,7 +115,7 @@ minetest.register_craft({
 
 -- palm trunk (thanks to VanessaE for palm textures)
 minetest.register_node("ethereal:palm_trunk", {
-	description = "Palm Trunk",
+	description = S("Palm Trunk"),
 	tiles = {
 		"moretrees_palm_trunk_top.png",
 		"moretrees_palm_trunk_top.png",
@@ -127,7 +129,7 @@ minetest.register_node("ethereal:palm_trunk", {
 
 -- palm wood
 minetest.register_node("ethereal:palm_wood", {
-	description = "Palm Wood",
+	description = S("Palm Wood"),
 	tiles = {"moretrees_palm_wood.png"},
 	is_ground_content = false,
 	groups = {wood = 1, choppy = 2, oddly_breakable_by_hand = 1, flammable = 3},
@@ -141,7 +143,7 @@ minetest.register_craft({
 
 -- banana trunk
 minetest.register_node("ethereal:banana_trunk", {
-	description = "Banana Trunk",
+	description = S("Banana Trunk"),
 	tiles = {
 		"banana_trunk_top.png",
 		"banana_trunk_top.png",
@@ -155,7 +157,7 @@ minetest.register_node("ethereal:banana_trunk", {
 
 -- banana wood
 minetest.register_node("ethereal:banana_wood", {
-	description = "Banana Wood",
+	description = S("Banana Wood"),
 	tiles = {"banana_wood.png"},
 	is_ground_content = false,
 	groups = {wood = 1, choppy = 2, oddly_breakable_by_hand = 1, flammable = 3},
@@ -169,7 +171,7 @@ minetest.register_craft({
 
 -- scorched trunk
 minetest.register_node("ethereal:scorched_tree", {
-	description = "Scorched Tree",
+	description = S("Scorched Tree"),
 	tiles = {
 		"scorched_tree_top.png",
 		"scorched_tree_top.png",
@@ -192,7 +194,7 @@ minetest.register_craft({
 
 -- mushroom trunk
 minetest.register_node("ethereal:mushroom_trunk", {
-	description = "Mushroom",
+	description = S("Mushroom"),
 	tiles = {
 		"mushroom_trunk_top.png",
 		"mushroom_trunk_top.png",
@@ -206,7 +208,7 @@ minetest.register_node("ethereal:mushroom_trunk", {
 
 -- birch trunk (thanks to VanessaE for birch textures)
 minetest.register_node("ethereal:birch_trunk", {
-	description = "Birch Trunk",
+	description = S("Birch Trunk"),
 	tiles = {
 		"moretrees_birch_trunk_top.png",
 		"moretrees_birch_trunk_top.png",
@@ -220,7 +222,7 @@ minetest.register_node("ethereal:birch_trunk", {
 
 -- birch wood
 minetest.register_node("ethereal:birch_wood", {
-	description = "Birch Wood",
+	description = S("Birch Wood"),
 	tiles = {"moretrees_birch_wood.png"},
 	is_ground_content = false,
 	groups = {wood = 1, choppy = 2, oddly_breakable_by_hand = 1, flammable = 3},
@@ -234,7 +236,7 @@ minetest.register_craft({
 
 -- Bamboo (thanks to Nelo-slay on DeviantArt for the free Bamboo base image)
 minetest.register_node("ethereal:bamboo", {
-	description = "bamboo",
+	description = S("Bamboo"),
 	drawtype = "plantlike",
 	tiles = {"bamboo.png"},
 	inventory_image = "bamboo.png",

@@ -1,10 +1,12 @@
 
+local S = ethereal.intllib
+
 -- override default dirt (to stop caves cutting away dirt)
 minetest.override_item("default:dirt", {is_ground_content = ethereal.cavedirt})
 
 -- green dirt
 minetest.register_node("ethereal:green_dirt", {
-	description = "Green Dirt",
+	description = S("Green Dirt"),
 	tiles = {
 		"default_grass.png",
 		"default_dirt.png",
@@ -23,7 +25,7 @@ minetest.register_node("ethereal:green_dirt", {
 
 -- dry dirt
 minetest.register_node("ethereal:dry_dirt", {
-	description = "Dried Dirt",
+	description = S("Dried Dirt"),
 	tiles = {"ethereal_dry_dirt.png"},
 	is_ground_content = ethereal.cavedirt,
 	groups = {crumbly = 3},
@@ -48,7 +50,7 @@ for n = 1, #dirts do
 	local name = desc:lower()
 
 	minetest.register_node("ethereal:"..name.."_dirt", {
-		description = desc.." Dirt",
+		ddescription = S(desc.." Dirt"),
 		tiles = {
 			"ethereal_grass_"..name.."_top.png",
 			"default_dirt.png",
@@ -156,7 +158,7 @@ minetest.register_abm({
 if not minetest.get_modpath("bakedclay") then
 
 	minetest.register_node(":bakedclay:red", {
-		description = "Red Baked Clay",
+		description = S("Red Baked Clay"),
 		tiles = {"baked_clay_red.png"},
 		groups = {cracky = 3},
 		is_ground_content = ethereal.cavedirt,
@@ -164,7 +166,7 @@ if not minetest.get_modpath("bakedclay") then
 	})
 
 	minetest.register_node(":bakedclay:orange", {
-		description = "Orange Baked Clay",
+		description = S("Orange Baked Clay"),
 		tiles = {"baked_clay_orange.png"},
 		groups = {cracky = 3},
 		is_ground_content = ethereal.cavedirt,
@@ -172,7 +174,7 @@ if not minetest.get_modpath("bakedclay") then
 	})
 
 	minetest.register_node(":bakedclay:grey", {
-		description = "Grey Baked Clay",
+		description = S("Grey Baked Clay"),
 		tiles = {"baked_clay_grey.png"},
 		groups = {cracky = 3},
 		is_ground_content = ethereal.cavedirt,
@@ -184,7 +186,7 @@ end
 -- Quicksand (old style, sinking inside shows black instead of yellow effect,
 -- works ok with noclip enabled though)
 minetest.register_node("ethereal:quicksand", {
-	description = "Quicksand",
+	description = S("Quicksand"),
 	tiles = {"default_sand.png"},
 	drop = "default:sand",
 	liquid_viscosity = 15,
@@ -204,7 +206,7 @@ minetest.register_node("ethereal:quicksand", {
 -- Quicksand (new style, sinking inside shows yellow effect with or without noclip,
 -- but old quicksand is shown as black until block placed nearby to update light)
 minetest.register_node("ethereal:quicksand2", {
-	description = "Quicksand",
+	description = S("Quicksand"),
 	tiles = {"default_sand.png"},
 	drawtype = "glasslike",
 	paramtype = "light",

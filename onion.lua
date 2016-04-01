@@ -1,7 +1,9 @@
 
+local S = ethereal.intllib
+
 -- wild onion
 minetest.register_craftitem("ethereal:wild_onion_plant", {
-	description = "Wild Onion",
+	description = S("Wild Onion"),
 	inventory_image = "wild_onion.png",
 	wield_image = "wild_onion.png",
 	on_place = function(itemstack, placer, pointed_thing)

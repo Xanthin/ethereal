@@ -1,6 +1,8 @@
+local S = ethereal.intllib
+
 -- Raw Fish (Thanks to Altairas for her Fish image on DeviantArt)
 minetest.register_craftitem("ethereal:fish_raw", {
-	description = "Raw Fish",
+	description = S("Raw Fish"),
 	inventory_image = "fish_raw.png",
 	wield_image = "fish_raw.png",
 	on_use = minetest.item_eat(2),
@@ -8,7 +10,7 @@ minetest.register_craftitem("ethereal:fish_raw", {
 
 -- Cooked Fish
 minetest.register_craftitem("ethereal:fish_cooked", {
-	description = "Cooked Fish",
+	description = S("Cooked Fish"),
 	inventory_image = "fish_cooked.png",
 	wield_image = "fish_cooked.png",
 	on_use = minetest.item_eat(5),
@@ -23,7 +25,7 @@ minetest.register_craft({
 
 -- Sashimi (Thanks to Natalia Grosner for letting me use the sashimi image)
 minetest.register_craftitem("ethereal:sashimi", {
-	description = "Sashimi",
+	description = S("Sashimi"),
 	inventory_image = "sashimi.png",
 	wield_image = "sashimi.png",
 	on_use = minetest.item_eat(4),
@@ -38,14 +40,14 @@ minetest.register_craft({
 
 -- Worm
 minetest.register_craftitem("ethereal:worm", {
-	description = "Worm",
+	description = S("Worm"),
 	inventory_image = "worm.png",
 	wield_image = "worm.png",
 })
 
 -- Fishing Rod
 minetest.register_craftitem("ethereal:fishing_rod", {
-	description = "Fishing Rod",
+	description = S("Fishing Rod"),
 	inventory_image = "fishing_rod.png",
 	wield_image = "fishing_rod.png",
 })
@@ -80,7 +82,7 @@ end
 
 -- Fishing Rod (Baited)
 minetest.register_craftitem("ethereal:fishing_rod_baited", {
-	description = "Baited Fishing Rod",
+	description = S("Baited Fishing Rod"),
 	inventory_image = "fishing_rod_baited.png",
 	wield_image = "fishing_rod_wield.png",
 	stack_max = 1,
@@ -108,7 +110,7 @@ minetest.register_craftitem("ethereal:fishing_rod_baited", {
 				return {name = "ethereal:fishing_rod"}
 			else
 				minetest.chat_send_player(user:get_player_name(),
-					"Inventory full, Fish Got Away!")
+					S("Inventory full, Fish Got Away!"))
 			end
 		end
 	end,
